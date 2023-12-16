@@ -25,8 +25,6 @@ function handleRadioChange() {
 }
 
 function handleUppercase() {
-      alert("BoringBetty is selected");
-
   var txt = document.getElementById("text");
   var upperCase = txt.value.toUpperCase();
   var sentences = upperCase.split('.'); 
