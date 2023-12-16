@@ -26,7 +26,13 @@
   document.getElementById("encrypt-it").addEventListener("click", handleClick);
 
 
+function handleReset() {
+  document.getElementById("input-text").value = ""; // Clear the input-text content
+}
 
+document.getElementById("reset").addEventListener("click", handleReset);
+
+  
   // Add any other functions in this area (you should not implement your
   // entire program in the init function, for similar reasons that
   // you shouldn't write an entire Java program in the main method).
