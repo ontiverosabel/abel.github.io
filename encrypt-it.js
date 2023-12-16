@@ -20,6 +20,12 @@
     console.log("Window loaded!");
 
   }
+  function handleClick() {
+  console.log("Button clicked!"); 
+}
+  document.getElementById("encrypt-it").addEventListener("click", handleClick);
+
+
 
   // Add any other functions in this area (you should not implement your
   // entire program in the init function, for similar reasons that
