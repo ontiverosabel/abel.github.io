@@ -17,7 +17,7 @@
   function init() {
     // Note: In this function, we usually want to set up our event handlers
     // for UI elements on the page
-    console.log("Window loaded!");
+    console.log("Window lojnnaded!");
 
   }
 function handleClick() {
