@@ -7,22 +7,33 @@ function handleClick() {
 function handleRadioChange() {
   var fancyShmancyRadio = document.getElementById("fancyShmancyRadio");
   var boringBettyRadio = document.getElementById("boringBettyRadio");
-  var textarea = document.getElementById("text");
+  var txt = document.getElementById("text");
 
   if (fancyShmancyRadio.checked) {
     alert("FancyShmancy is selected");
-    textarea.style.fontWeight = "bold";
-    textarea.style.textDecoration = "underline";
-    textarea.style.color = "blue";
+    txt.style.fontWeight = "bold";
+    txt.style.textDecoration = "underline";
+    txt.style.color = "blue";
  
   
   } else if (boringBettyRadio.checked) {
     alert("BoringBetty is selected");
-    textarea.style.fontWeight = "normal";
-    textarea.style.textDecoration = "none";
-    textarea.style.color = "black";
+    txt.style.fontWeight = "normal";
+    txt.style.textDecoration = "none";
+    txt.style.color = "black";
   }
+}
 
-
-  
+function handleUppercase() {
+  var txt = document.getElementById("text");
+  var upperCase textarea.value.toUpperCase();
+  var sentences = upperCase.split('.'); 
+  for (var i = 0; i < sentences.length; i++) {
+    var words = sentences[i].trim().split(' '); 
+    if (words.length > 0) {
+      words[words.length - 1] += '-Moo'; // Add "-Moo" to the last word
+      sentences[i] = words.join(' '); // Join words back into a sentence
+    }
+  }
+  txt.value = sentences.join('. ');
 }
