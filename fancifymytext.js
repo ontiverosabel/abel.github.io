@@ -26,7 +26,7 @@ function handleRadioChange() {
 
 function handleUppercase() {
   var txt = document.getElementById("text");
-  var upperCase textarea.value.toUpperCase();
+  var upperCase txt.value.toUpperCase();
   var sentences = upperCase.split('.'); 
   for (var i = 0; i < sentences.length; i++) {
     var words = sentences[i].trim().split(' '); 
